@@ -91,4 +91,9 @@ cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo chmod +x *.sh && sudo sh .
 
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -f
+sudo apt autoremove
+
+

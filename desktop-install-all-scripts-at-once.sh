@@ -91,5 +91,9 @@ sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -f
+sudo apt autoremove
+
 
