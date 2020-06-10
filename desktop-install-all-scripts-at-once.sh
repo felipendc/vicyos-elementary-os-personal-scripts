@@ -63,11 +63,9 @@ sudo ufw enable
 #sudo smbpasswd -a $current_user_name
 
 # Vicyos Personal snaps:
-sudo snap install \
-
-    odio \
-    meteo \
-    onlyoffice-desktopeditors
+sudo snap install odio
+sudo snap install meteo
+sudo snap install onlyoffice-desktopeditors
 
 # Initiate git-lfs for larger packages:
 # git lfs install
@@ -95,7 +93,7 @@ cd random && sudo apt install ./4kvideodownloader*.deb -y --allow-downgrades && 
 cd random && sudo apt install ./google-chrome-stable_current_amd64.deb -y --allow-downgrades && cd ../
 
 # Install Visual Studio Code:
-cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
+#cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
 
 # Install Photoscape with wine:
 #wine random/photoscape*.exe 
