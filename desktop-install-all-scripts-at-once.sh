@@ -11,11 +11,32 @@ current_user_name="vicyos"
 
 
 # Vicyos  Personal packages:
-sudo apt install \
-    python3-pip git-lfs vlc clementine wine-stable qbittorrent synaptic gufw \
-    samba smbclient samba-common-bin smbclient libsmbclient inkscape \
-    winff brasero deepin-movie filezilla handbrake gimp krita gnome-tweaks \
-    simplescreenrecorder pyhton python-pip -y
+
+sudo apt install python3-pip -y
+sudo apt install git-lfs -y
+sudo apt install vlc -y
+sudo apt install clementine -y
+sudo apt install wine-stable -y
+sudo apt install qbittorrent -y
+sudo apt install synaptic -y
+sudo apt install gufw -y
+sudo apt install samba -y
+sudo apt install smbclient -y
+sudo apt install samba-common-bin -y
+sudo apt install smbclient -y
+sudo apt install libsmbclient -y
+sudo apt install inkscape -y
+sudo apt install winff -y
+sudo apt install brasero -y
+sudo apt install deepin-movie -y
+sudo apt install filezilla -y
+sudo apt install handbrake -y
+sudo apt install gimp -y
+sudo apt install krita -y
+sudo apt install gnome-tweaks -y
+sudo apt install simplescreenrecorder -y
+sudo apt install pyhton -y
+sudo apt install python-pip -y
         
 # Install any pkgs dependencies
 sudo apt install -f
