@@ -28,7 +28,7 @@ sudo ufw enable
 #sudo ufw allow Samba
 
 # Setup Samba
-sudo smbpasswd -a $current_user_name
+#sudo smbpasswd -a $current_user_name
 
 # Vicyos Personal snaps:
 sudo snap install \
