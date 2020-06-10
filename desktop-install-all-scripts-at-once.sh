@@ -12,7 +12,7 @@ current_user_name="vicyos"
 
 # Vicyos  Personal packages:
 sudo apt install \
-    python3-pip git-lfs vlc clementine wine qbittorrent synaptic gufw \
+    python3-pip git-lfs vlc clementine wine-stable qbittorrent synaptic gufw \
     samba smbclient samba-common-bin smbclient libsmbclient inkscape \
     winff brasero deepin-movie filezilla handbrake gimp krita gnome-tweaks \
     simplescreenrecorder pyhton python-pip -y
