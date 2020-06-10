@@ -48,6 +48,8 @@ sudo apt install pyhton -y
 sudo apt install python-pip -y
 sudo apt install youtube-dl -y
 sudo apt install dconf-editor -y
+sudo apt install thunar -y
+
         
 # Install any pkgs dependencies
 sudo apt install -f
