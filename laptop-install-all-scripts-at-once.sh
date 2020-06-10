@@ -47,6 +47,7 @@ sudo apt install simplescreenrecorder -y
 sudo apt install pyhton -y
 sudo apt install python-pip -y
 sudo apt install youtube-dl -y
+sudo apt install dconf-editor -y
 
         
 # Install any pkgs dependencies
