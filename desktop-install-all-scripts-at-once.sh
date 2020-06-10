@@ -10,33 +10,44 @@
 current_user_name="vicyos"
 
 
+
+###############
+
+sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
+sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
+sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
+sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
+sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
+sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
+sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
+sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
+sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
+sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
+sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
+
+
+###############
+
 # Vicyos  Personal packages:
 
 sudo apt install python3-pip -y
 sudo apt install git-lfs -y
-sudo apt install vlc -y
-sudo apt install clementine -y
-sudo apt install wine-stable -y
-sudo apt install qbittorrent -y
 sudo apt install synaptic -y
-sudo apt install gufw -y
 sudo apt install samba -y
 sudo apt install smbclient -y
 sudo apt install samba-common-bin -y
 sudo apt install smbclient -y
 sudo apt install libsmbclient -y
-sudo apt install inkscape -y
 sudo apt install winff -y
 sudo apt install brasero -y
-sudo apt install deepin-movie -y
-sudo apt install filezilla -y
-sudo apt install handbrake -y
-sudo apt install gimp -y
-sudo apt install krita -y
 sudo apt install gnome-tweaks -y
 sudo apt install simplescreenrecorder -y
 sudo apt install pyhton -y
 sudo apt install python-pip -y
+sudo apt install youtube-dl -y
+
         
 # Install any pkgs dependencies
 sudo apt install -f
@@ -53,19 +64,13 @@ sudo ufw enable
 
 # Vicyos Personal snaps:
 sudo snap install \
-    visualg \
-    discord-bartixxx \
-    telegram-desktop \
-    glimpse-editor \
+
     odio \
-    youtube-dl \
     meteo \
     onlyoffice-desktopeditors
 
 # Initiate git-lfs for larger packages:
 # git lfs install
-
-
 
 
 
