@@ -222,7 +222,7 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 alias revo='sudo apt autoremove'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias revo='sudo apt autoremove'
-alias revo='sudo systemctl reboot -i'
+alias reboot='sudo systemctl reboot -i'
 
 export PATH="$PATH:/home/vicyos/flutter/bin"
 
