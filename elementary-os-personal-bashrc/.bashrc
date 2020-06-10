@@ -1,6 +1,11 @@
+# ELEMENTARYOS
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+# We use preexec and precmd hook functions for Bash
+# If you have anything that's using the Debug Trap or PROMPT_COMMAND 
+# change it to use preexec or precmd
+# See also https://github.com/rcaloras/bash-preexec
 
 # If not running interactively, don't do anything
 case $- in
@@ -63,15 +68,6 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -116,8 +112,76 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias reboot='systemctl reboot -i'
-alias upall='sudo apt update && sudo apt upgrade'
+# If this is an xterm set more declarative titles 
+# "dir: last_cmd" and "actual_cmd" during execution
+# If you want to exclude a cmd from being printed see line 156
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\$(print_title)\a\]$PS1"
+    __el_LAST_EXECUTED_COMMAND=""
+    print_title () 
+    {
+        __el_FIRSTPART=""
+        __el_SECONDPART=""
+        if [ "$PWD" == "$HOME" ]; then
+            __el_FIRSTPART=$(gettext --domain="pantheon-files" "Home")
+        else
+            if [ "$PWD" == "/" ]; then
+                __el_FIRSTPART="/"
+            else
+                __el_FIRSTPART="${PWD##*/}"
+            fi
+        fi
+        if [[ "$__el_LAST_EXECUTED_COMMAND" == "" ]]; then
+            echo "$__el_FIRSTPART"
+            return
+        fi
+        #trim the command to the first segment and strip sudo
+        if [[ "$__el_LAST_EXECUTED_COMMAND" == sudo* ]]; then
+            __el_SECONDPART="${__el_LAST_EXECUTED_COMMAND:5}"
+            __el_SECONDPART="${__el_SECONDPART%% *}"
+        else
+            __el_SECONDPART="${__el_LAST_EXECUTED_COMMAND%% *}"
+        fi 
+        printf "%s: %s" "$__el_FIRSTPART" "$__el_SECONDPART"
+    }
+    put_title()
+    {
+        __el_LAST_EXECUTED_COMMAND="${BASH_COMMAND}"
+        printf "\033]0;%s\007" "$1"
+    }
+    
+    # Show the currently running command in the terminal title:
+    # http://www.davidpashley.com/articles/xterm-titles-with-bash.html
+    update_tab_command()
+    {
+        # catch blacklisted commands and nested escapes
+        case "$BASH_COMMAND" in 
+            *\033]0*|update_*|echo*|printf*|clear*|cd*)
+            __el_LAST_EXECUTED_COMMAND=""
+                ;;
+            *)
+            put_title "${BASH_COMMAND}"
+            ;;
+        esac
+    }
+    preexec_functions+=(update_tab_command)
+    ;;
+*)
+    ;;
+esac
+
+
+
+
+#################################################################
+################### VICYOS-PERSONAL-ALIAS  ######################
+#################################################################
+
+
+
+
+
 
 #youtube-dl
 
@@ -149,21 +213,23 @@ alias atualizar-o-sistema='sudo pacman -Syu'
 alias reiniciar-o-computador="reboot"
 alias sudo-desligar-o-computador="sudo shutdown now"
 alias desligar-o-computador="shutdown now"
-alias att='sudo pacman -Syu'
-#clear && neofetch
 
+
+
+############# Vicyos Personal ################
+
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias revo='sudo apt autoremove'
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias revo='sudo apt autoremove'
+export PATH="$PATH:/home/vicyos/flutter/bin"
 
 ############ CCACHE to compile android custom roms! ############
-export USE_CCACHE=1
-export CCACHE_DIR="${HOME}/.ccache"
-export CCACHE_EXEC="$(which ccache)"
+
+#export USE_CCACHE=1
+#export CCACHE_DIR="${HOME}/.ccache"
+#export CCACHE_EXEC="$(which ccache)"
 #ccache -M 150G
 
 
-############ My Personal Build Stuff ############
 
-#export KBUILD_BUILD_USER="Vicyos"
-#export KBUILD_BUILD_HOST="Vicyos"
-#export SELINUX_IGNORE_NEVERALLOWS=true
-#export CUSTOM_BUILD_TYPE=OFFICIAL
-#export OPENGAPPS_TYPE=ALPHA
