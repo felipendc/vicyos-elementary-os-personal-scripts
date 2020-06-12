@@ -224,6 +224,9 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 alias revo='sudo apt autoremove'
 alias reboot='sudo systemctl reboot -i'
 
+alias install='sudo apt install'
+alias remove='sudo apt remove'
+
 export PATH="$PATH:/home/vicyos/flutter/bin"
 
 ############ CCACHE to compile android custom roms! ############
