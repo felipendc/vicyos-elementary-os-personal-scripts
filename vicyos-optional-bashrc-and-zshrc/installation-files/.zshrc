@@ -117,11 +117,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-
-
-
-
-
 #################################################################
 ################### VICYOS-PERSONAL-ALIAS  ######################
 #################################################################
@@ -170,6 +165,12 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 alias revo='sudo apt autoremove'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias revo='sudo apt autoremove'
+alias reboot='sudo systemctl reboot -i'
+
+alias install='sudo apt install'
+alias remove='sudo apt remove'
+alias unlock='sudo rm /var/lib/dpkg/lock-frontend && sudo rm /var/lib/dpkg/lock'
+
 export PATH="$PATH:/home/vicyos/flutter/bin"
 
 ############ CCACHE to compile android custom roms! ############
@@ -178,6 +179,7 @@ export PATH="$PATH:/home/vicyos/flutter/bin"
 #export CCACHE_DIR="${HOME}/.ccache"
 #export CCACHE_EXEC="$(which ccache)"
 #ccache -M 150G
+
 
 
 clear && neofetch
