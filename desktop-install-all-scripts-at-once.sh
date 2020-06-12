@@ -49,7 +49,8 @@ sudo apt install python-pip -y
 sudo apt install youtube-dl -y
 sudo apt install dconf-editor -y
 sudo apt install thunar -y
-
+sudo apt install com.github.stsdc.monitor -y
+sudo apt install gnome-system-monitor -y
         
 # Install any pkgs dependencies
 sudo apt install -f
