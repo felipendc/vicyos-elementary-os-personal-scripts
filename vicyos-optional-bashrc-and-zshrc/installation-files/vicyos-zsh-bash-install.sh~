@@ -14,7 +14,7 @@ cp -r .zshrc ~/
 # Use the my moded .bashrc file
 cd ../../ && cp -r elementary-os-personal-bashrc/.bashrc ~/
 
-# Add zsh to .bashrc file to auto call zsh on terminal
+# Add zsh to .bashrc file to call auto zsh on terminal
 echo "zsh" >> ~/.bashrc
 
 
