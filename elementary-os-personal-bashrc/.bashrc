@@ -226,6 +226,7 @@ alias reboot='sudo systemctl reboot -i'
 
 alias install='sudo apt install'
 alias remove='sudo apt remove'
+alias unlock='sudo rm /var/lib/dpkg/lock-frontend && sudo rm /var/lib/dpkg/lock'
 
 export PATH="$PATH:/home/vicyos/flutter/bin"
 
