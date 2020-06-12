@@ -52,6 +52,8 @@ sudo apt install thunar -y
 sudo apt install com.github.stsdc.monitor -y
 sudo apt install gnome-system-monitor -y
 sudo apt install ocl-icd-opencl-dev -y
+sudo apt install com.github.donadigo.eddy -y
+
         
 # Install any pkgs dependencies
 sudo apt install -f
