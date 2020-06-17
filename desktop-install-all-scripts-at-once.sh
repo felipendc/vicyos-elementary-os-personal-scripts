@@ -26,7 +26,8 @@ sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
 sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
 sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
 sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
-
+sudo flatpak install -y com.gitlab.bitseater.meteo.flatpakref
+sudo flatpak install -y org.onlyoffice.desktopeditors.flatpakref
 
 ###############
 
@@ -70,8 +71,6 @@ sudo ufw enable
 
 # Vicyos Personal snaps:
 sudo snap install odio
-sudo snap install meteo
-sudo snap install onlyoffice-desktopeditors
 
 # Initiate git-lfs for larger packages:
 # git lfs install
