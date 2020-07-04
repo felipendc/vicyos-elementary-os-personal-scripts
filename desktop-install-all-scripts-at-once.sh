@@ -57,6 +57,7 @@ sudo apt install ocl-icd-opencl-dev -y
 sudo apt install com.github.donadigo.eddy -y
 sudo apt install xsensors -y
 sudo apt install gnome-disk-utility -y
+sudo apt install gparted -y
         
 # Install any pkgs dependencies
 sudo apt install -f
