@@ -58,6 +58,7 @@ sudo apt install com.github.donadigo.eddy -y
 sudo apt install xsensors -y
 sudo apt install gnome-disk-utility -y
 sudo apt install gparted -y
+sudo apt install hardinfo -y
         
 # Install any pkgs dependencies
 sudo apt install -f
