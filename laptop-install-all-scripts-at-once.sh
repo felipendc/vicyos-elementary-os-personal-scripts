@@ -26,9 +26,9 @@ sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
 sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
 sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
 sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
-sudo flatpak install -y com.gitlab.bitseater.meteo.flatpakref
-sudo flatpak install -y org.onlyoffice.desktopeditors.flatpakref
-sudo flatpak install -y com.hamrick.VueScan.flatpakref
+sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
+sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
+sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
 
 
 ###############
