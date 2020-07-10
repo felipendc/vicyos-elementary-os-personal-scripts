@@ -1,0 +1,3 @@
+brightness options to help with eyestrain 
+xrandr --output HDMI-0 --brightness 0.89
+xrandr --output HDMI-0 --brightness 1
