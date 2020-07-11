@@ -120,7 +120,22 @@ sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 # Install Intel Screen Tearing fix, just in case you are using: Intel® HD Graphics
 #cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo sh ./vicyos-install-linux-screen-tearing-#fix.sh && cd ../
 
+git clone https://github.com/felipendc/wingpanel-indicator-namarupa.git
+cd wingpanel-indicator-namarupa
+meson build --prefix=/usr && cd build
+ninja
+sudo ninja install && cd../../
 
+
+# Install wingpanel-indicator-namarupa:
+git clone https://github.com/felipendc/wingpanel-indicator-namarupa.git
+cd wingpanel-indicator-namarupa
+meson build --prefix=/usr && cd build
+#sudo meson setup --wipe
+ninja
+sudo ninja install 
+cd ../../
+sudo rm -rv wingpanel-indicator-namarupa
 
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
