@@ -123,6 +123,7 @@ sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo chmod +x *.sh && sudo sh ./vicyos-install-linux-screen-tearing-fix.sh && cd ../
 
 
+
 # Install wingpanel-indicator-namarupa:
 git clone https://github.com/felipendc/wingpanel-indicator-namarupa.git
 cd wingpanel-indicator-namarupa
@@ -132,6 +133,7 @@ ninja
 sudo ninja install 
 cd ../../
 sudo rm -rv wingpanel-indicator-namarupa
+
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
 sudo apt update
