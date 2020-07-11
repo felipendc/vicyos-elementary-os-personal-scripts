@@ -5,7 +5,7 @@
 
 **Recommended NVIDIA Graphic Card Driver Version:** 
 
-- [x] 390.138 (Helps to prevent the eyestrain)
+- [x] 390.138 (Helps to prevent eyestrain)
 
 
 <br>
