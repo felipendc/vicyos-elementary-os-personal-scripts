@@ -15,6 +15,6 @@ sudo apt autoremove
 sudo apt install -y git snapd wine-stable
 
 # Pkgs to compile wingpanel-indicator-namarupa: 
-sudo apt install gobject-introspection libglib2.0-dev libgranite-dev libindicator3-dev libwingpanel-2.0-dev valac meson
+sudo apt install -y gobject-introspection libglib2.0-dev libgranite-dev libindicator3-dev libwingpanel-2.0-dev valac meson
 
 sudo reboot
