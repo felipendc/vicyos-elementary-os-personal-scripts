@@ -28,7 +28,7 @@ nvidia.com/Download/driverResults.aspx/160182/en-us
 <br>
 <br>
 
-**OFFICIAL NVIDIA DRIVER 390.138 INSTALL VIA COMMAND:**
+**OFFICIAL NVIDIA DRIVER 390.138 INSTALLATION VIA COMMAND:**
 
 <pre>
 sudo apt install nvidia-driver-390 nvidia-settings
