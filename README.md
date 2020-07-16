@@ -25,7 +25,11 @@ drive.google.com/drive/folders/1YSHBk1Yllns800dCd92_5BuUm0dYynF_?usp=sharing
 nvidia.com/Download/driverResults.aspx/160182/en-us
 </pre>
 
-<br>
+**OFFICIAL NVIDIA DRIVER 390.138 INSTALL VIA COMMAND:**
+
+<pre>
+sudo apt install nvidia-driver-390 nvidia-settings
+</pre>
 
 ![](https://i.imgur.com/bAT6U1U.png)
 ![](https://i.imgur.com/uybSU72.png)
