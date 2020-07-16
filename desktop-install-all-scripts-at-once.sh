@@ -59,7 +59,11 @@ sudo apt install xsensors -y
 sudo apt install gnome-disk-utility -y
 sudo apt install gparted -y
 sudo apt install hardinfo -y
-        
+sudo apt install wireless-tools -y
+sudo apt install net-tools -y
+
+
+
 # Install any pkgs dependencies
 sudo apt install -f
 
