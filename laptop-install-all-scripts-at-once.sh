@@ -136,6 +136,12 @@ cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo chmod +x *.sh && sudo sh .
 #cd ../../
 #sudo rm -rv wingpanel-indicator-namarupa
 
+# Install ukuu
+cd ukuu-teejee2008
+make all
+sudo make install
+cd ../ 
+
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
 sudo apt update

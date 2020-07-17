@@ -137,7 +137,11 @@ sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 #cd ../../
 #sudo rm -rv wingpanel-indicator-namarupa
 
-
+# Install ukuu
+cd ukuu-teejee2008
+make all
+sudo make install
+cd ../ 
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
 sudo apt update
