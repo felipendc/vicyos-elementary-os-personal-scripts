@@ -142,6 +142,7 @@ cd ukuu-teejee2008
 make clean
 make all
 sudo make install
+make clean
 cd ../ 
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
