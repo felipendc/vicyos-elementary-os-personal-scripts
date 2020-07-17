@@ -9,7 +9,8 @@
 # Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
 
-
+sudo apt update
+sudo apt install -y nvidia-driver-390 nvidia-settings
 
 ###############
 
