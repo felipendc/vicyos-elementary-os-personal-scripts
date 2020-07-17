@@ -228,6 +228,7 @@ alias install='sudo apt install'
 alias remove='sudo apt remove'
 alias unlock='sudo rm /var/lib/dpkg/lock-frontend && sudo rm /var/lib/dpkg/lock'
 alias fix='sudo dpkg --configure -a'
+alias cloud='scdl -l'
 
 export PATH="$PATH:/home/vicyos/flutter/bin"
 
