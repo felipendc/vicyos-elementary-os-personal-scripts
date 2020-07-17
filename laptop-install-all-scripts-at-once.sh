@@ -138,6 +138,7 @@ cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo chmod +x *.sh && sudo sh .
 
 # Install ukuu
 cd ukuu-teejee2008
+make clean
 make all
 sudo make install
 cd ../ 

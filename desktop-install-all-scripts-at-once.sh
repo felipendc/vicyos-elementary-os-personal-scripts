@@ -139,6 +139,7 @@ sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 
 # Install ukuu
 cd ukuu-teejee2008
+make clean
 make all
 sudo make install
 cd ../ 
