@@ -208,7 +208,7 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 ##########  Brazillian Portuguese alias  ########## 
 
 alias kernel="cat /proc/version"
-alias sudo-o-reiniciar-o-computador="sudo reboot"
+alias sudo-reiniciar-o-computador="sudo reboot"
 alias atualizar-o-sistema='sudo pacman -Syu'
 alias reiniciar-o-computador="reboot"
 alias sudo-desligar-o-computador="sudo shutdown now"
