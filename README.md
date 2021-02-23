@@ -34,6 +34,15 @@ nvidia.com/Download/driverResults.aspx/160182/en-us
 sudo apt install nvidia-driver-390 nvidia-settings
 </pre>
 
+
+<br>
+<br>
+
+**ADD PPA SUPPORT FOR ELEMENTARY OS:**
+
+<pre>
+sudo apt install software-properties-common</pre>
+
 <br>
 
 ![](https://i.imgur.com/bAT6U1U.png)
