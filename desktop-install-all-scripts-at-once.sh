@@ -9,8 +9,8 @@
 # Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
 
-sudo apt update
-sudo apt install -y nvidia-driver-390 nvidia-settings
+#sudo apt update
+#sudo apt install -y nvidia-driver-390 nvidia-settings
 
 ###############
 
@@ -34,7 +34,7 @@ sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
 ###############
 
 # Vicyos  Personal packages:
-
+sudo apt install python -y
 sudo apt install python3-pip -y
 sudo apt install git-lfs -y
 sudo apt install synaptic -y
@@ -47,8 +47,6 @@ sudo apt install winff -y
 sudo apt install brasero -y
 sudo apt install gnome-tweaks -y
 sudo apt install simplescreenrecorder -y
-sudo apt install pyhton -y
-sudo apt install python-pip -y
 sudo apt install youtube-dl -y
 sudo apt install dconf-editor -y
 sudo apt install thunar -y
@@ -151,4 +149,5 @@ sudo apt upgrade -y
 sudo apt install -f
 sudo apt autoremove
 
-
+# Set python 3 as default:
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
