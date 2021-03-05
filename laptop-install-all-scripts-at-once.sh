@@ -38,6 +38,7 @@ sudo apt install hardinfo -y
 sudo apt install wireless-tools -y
 sudo apt install net-tools -y
 sudo apt install simple-scan -y
+sudo apt install obs-studio
         
 # Install any pkgs dependencies
 sudo apt install -f

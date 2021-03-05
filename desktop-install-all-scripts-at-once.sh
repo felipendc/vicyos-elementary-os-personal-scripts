@@ -41,6 +41,7 @@ sudo apt install hardinfo -y
 sudo apt install wireless-tools -y
 sudo apt install net-tools -y
 sudo apt install simple-scan -y
+sudo apt install obs-studio
 
 ###############
 sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
