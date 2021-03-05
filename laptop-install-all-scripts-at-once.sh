@@ -8,33 +8,9 @@
 
 # Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
-
-
-
-###############
-
-sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
-sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
-sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
-sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
-sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
-sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
-sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
-sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
-sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
-sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
-sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
-sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
-sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
-sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
-sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
-sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
-
-
 ###############
 
 # Vicyos  Personal packages:
-
 sudo apt install python -y
 sudo apt install python3-pip -y
 sudo apt install git-lfs -y
@@ -82,6 +58,24 @@ sudo snap install odio
 # Initiate git-lfs for larger packages:
 # git lfs install
 
+
+###############
+sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
+sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
+sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
+sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
+sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
+sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
+sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
+sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
+sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
+sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
+sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
+sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
+sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
+sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
 
 
 #########################################

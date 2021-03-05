@@ -11,26 +11,6 @@ current_user_name="vicyos"
 
 #sudo apt update
 #sudo apt install -y nvidia-driver-390 nvidia-settings
-
-###############
-
-sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
-sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
-sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
-sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
-sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
-sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
-sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
-sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
-sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
-sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
-sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
-sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
-sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
-sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
-sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
-sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
-
 ###############
 
 # Vicyos  Personal packages:
@@ -61,6 +41,24 @@ sudo apt install hardinfo -y
 sudo apt install wireless-tools -y
 sudo apt install net-tools -y
 sudo apt install simple-scan -y
+
+###############
+sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
+sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
+sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
+sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
+sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
+sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
+sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
+sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
+sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
+sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
+sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
+sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
+sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
+sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
 
 
 # Install any pkgs dependencies
