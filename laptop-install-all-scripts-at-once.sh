@@ -14,10 +14,10 @@ current_user_name="vicyos"
 # Vicyos  Personal packages:
 
 # Compilar e instalar o Python-3.9.2.
-cd compilar_python_apartir_da_fonte && sudo chmod +x *.sh && ./compilar_python_apartir_da_fonte.sh && cd ../
+#cd compilar_python_apartir_da_fonte && sudo chmod +x *.sh && ./compilar_python_apartir_da_fonte.sh && cd ../
 
 sudo apt install python3-pip
-/opt/python-3.9.2/bin/python3.9 -m pip install --upgrade pip
+#/opt/python-3.9.2/bin/python3.9 -m pip install --upgrade pip
 sudo apt install git-lfs -y
 sudo apt install synaptic -y
 sudo apt install samba -y
