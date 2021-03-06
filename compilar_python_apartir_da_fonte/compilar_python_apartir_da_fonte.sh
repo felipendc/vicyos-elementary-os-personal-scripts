@@ -48,7 +48,7 @@ if [ -z "$verificar_python_path" ]; then
     cat >> $HOME/.bashrc <<- _EOF_
 
 # Python-$versao_do_python PATH
-export PATH=/opt/python-3.9.2/bin:\$PATH
+export PATH="$PATH:/opt/python-3.9.2/bin/python3.9"
 
 _EOF_
 fi
