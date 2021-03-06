@@ -2,8 +2,6 @@
 versao_do_python='3.9.2'
 verificar_python_path=$(grep -E "(/opt/python-$versao_do_python/)" $HOME/.bashrc)
 
-# Preparar o ambiente para a compilação do Python (Instalar todos os pkgs necessários para a compilação do Python).
-
 # Atualizar o sistema
 sudo apt update
 sudo apt upgrade
@@ -14,9 +12,6 @@ sudo apt install wget build-essential -y
 # Pre-requisitos para compilar o Python
 sudo apt install libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev -y
 sudo apt install libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev libffi-dev uuid-dev -y
-
-
-#########################################
 
 # Limpar arquivos temporários.
 if [ -e "Python-$versao_do_python.tar.xz" ]; then
