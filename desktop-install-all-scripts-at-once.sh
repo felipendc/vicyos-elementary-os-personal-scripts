@@ -13,9 +13,14 @@ current_user_name="vicyos"
 #sudo apt install -y nvidia-driver-390 nvidia-settings
 ###############
 
+
 # Vicyos  Personal packages:
-sudo apt install python -y
-sudo apt install python3-pip -y
+
+# Compilar e instalar o Python-3.9.2.
+cd compilar_python_apartir_da_fonte && sudo chmod +x *.sh && ./compilar_python_apartir_da_fonte.sh && cd ../
+
+sudo apt install python3-pip3
+pip install --upgrade pip
 sudo apt install git-lfs -y
 sudo apt install synaptic -y
 sudo apt install samba -y
@@ -149,4 +154,4 @@ sudo apt install -f
 sudo apt autoremove
 
 # Set python 3 as default:
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+#sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
