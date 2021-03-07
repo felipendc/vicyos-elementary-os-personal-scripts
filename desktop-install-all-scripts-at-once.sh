@@ -39,6 +39,7 @@ sudo apt install python3.9-distutils
 # Compilar e instalar o Python-3.9.2.
 #cd compilar_python_apartir_da_fonte && sudo chmod +x *.sh && ./compilar_python_apartir_da_fonte.sh && cd ../
 
+sudo apt install hwinfo
 sudo apt install python3-pip
 python3.9 -m pip install --upgrade pip
 sudo apt install git-lfs -y

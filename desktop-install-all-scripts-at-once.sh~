@@ -8,6 +8,9 @@
 
 # Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
+
+#sudo apt update
+#sudo apt install -y nvidia-driver-390 nvidia-settings
 ###############
 
 #################   PPA   ########################
@@ -30,12 +33,12 @@ sudo apt install python3.9-distutils
 ###################################################
 
 
+
 # Vicyos  Personal packages:
 
 # Compilar e instalar o Python-3.9.2.
 #cd compilar_python_apartir_da_fonte && sudo chmod +x *.sh && ./compilar_python_apartir_da_fonte.sh && cd ../
 
-sudo apt install hwinfo
 sudo apt install python3-pip
 python3.9 -m pip install --upgrade pip
 sudo apt install git-lfs -y
@@ -64,7 +67,26 @@ sudo apt install wireless-tools -y
 sudo apt install net-tools -y
 sudo apt install simple-scan -y
 sudo apt install obs-studio
-        
+
+###############
+sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
+sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
+sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
+sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
+sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
+sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
+sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
+sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
+sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
+sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
+sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
+sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
+sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
+sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
+
+
 # Install any pkgs dependencies
 sudo apt install -f
 
@@ -84,24 +106,6 @@ sudo snap install odio
 # Initiate git-lfs for larger packages:
 # git lfs install
 
-
-###############
-sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
-sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
-sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
-sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
-sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
-sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
-sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
-sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
-sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
-sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
-sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
-sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
-sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
-sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
-sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
-sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
 
 
 #########################################
@@ -141,7 +145,7 @@ sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 
 
 # Install Intel Screen Tearing fix, just in case you are using: Intel® HD Graphics
-cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo chmod +x *.sh && sudo sh ./vicyos-install-linux-screen-tearing-fix.sh && cd ../
+#cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo sh ./vicyos-install-linux-screen-tearing-#fix.sh && cd ../
 
 
 
@@ -162,7 +166,6 @@ make all
 sudo make install
 make clean
 cd ../ 
-
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
 sudo apt update
