@@ -1,21 +1,25 @@
-### REFATORAÇÃO DO CÓDIGO EM BREVE:
-# https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/
+### CÓDIGO REFATORADO USANDO A BASE DE INSTUÇÕES DO WEBSITE:
+# Script criado por: Felipe Ndc (a.k.a: Vicyos)
 
+# https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/
 
 # Vareáveis
 versao_do_python='3.9.2'
 verificar_python_path=$(grep -E "(/opt/python-$versao_do_python/)" $HOME/.bashrc)
+dois_primeiros_digios=${versao_do_python::-2}
 
 # Atualizar o sistema
 sudo apt update
 sudo apt upgrade
 
-# Instalar o wget e o Toochain padrão do GCC
-sudo apt install wget build-essential -y
 
-# Pre-requisitos para compilar o Python
-sudo apt install libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev -y
-sudo apt install libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev libffi-dev uuid-dev -y
+
+# Instalar dependências necessárias para compilar o Python
+# O "\" serve para pular linha no script. Não afetará o executador.
+sudo apt install \
+    build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev \
+    libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+
 
 # Limpar arquivos temporários.
 if [ -e "Python-$versao_do_python.tar.xz" ]; then
@@ -35,34 +39,42 @@ tar -xf Python-$versao_do_python.tar.xz
 cd Python-$versao_do_python
 
 # Prepara os arquivos para a compilação.
-./configure --enable-optimizations --prefix=/opt/python-$versao_do_python
+./configure --enable-optimizations
 
 # Compila usando todos os núcleos do processador
-make -j $(nproc)
+make -j$(nproc --all)
 
 # Adicionar PATH para o Python
 # Verificar se a vareável "verificar_python_path" é núla. Se for, adicionar path do python no .bashrc 
-if [ -z "$verificar_python_path" ]; then
-# A barra invertida vai fazer com que o $PATH passe a ser apenas uma String.
-    cat >> $HOME/.bashrc <<- _EOF_
 
-# Python-$versao_do_python PATH
-export PATH="$PATH:/opt/python-3.9.2/bin/python3.9"
+##################################################
+# if [ -z "$verificar_python_path" ]; then
+# # A barra invertida vai fazer com que o $PATH passe a ser apenas uma String.
+#     cat >> $HOME/.bashrc <<- _EOF_
 
-_EOF_
-fi
+# # Python-$versao_do_python PATH
+# export PATH="$PATH:/opt/python-3.9.2/bin/python3.9"
 
-# Instalar o python compilado
-sudo make install
+# _EOF_
+# fi
+################################################
+
+#### Instalar o python compilado
+# Estamos usando altinstall em vez de instalar porque mais tarde 
+# sobrescreverá o binário python3 padrão do sistema.
+sudo make altinstall
 
 # Sair da pasta
 cd ../
 
-# Usar o python 3.9.2 por padrão:
-sudo update-alternatives --install /usr/bin/python3 python3 /opt/python-3.9.2/bin/python3.9 1
+# Setar a versão do Python padrão
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python$dois_primeiros_digios 1
+
+# Instalar distuils para python 3.9.x
+sudo apt install python$dois_primeiros_digios-distutils
 
 # Verificar a versão do Python
-python --version
+python$dois_primeiros_digios --version
 
 # Limpar arquivos (Remover arquivos temporários),
 # removendo todos os arquivos com o nome 'Python-$versao_do_python'.
