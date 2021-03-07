@@ -1,6 +1,5 @@
 ### CÓDIGO REFATORADO USANDO A BASE DE INSTRUÇÕES DO WEBSITE:
 # Script criado por: Felipe Ndc (a.k.a: Vicyos)
-
 # https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/
 
 # Vareáveis
@@ -12,14 +11,11 @@ dois_primeiros_digios=${versao_do_python::-2}
 sudo apt update
 sudo apt upgrade
 
-
-
 # Instalar dependências necessárias para compilar o Python
 # O "\" serve para pular linha no script. Não afetará o executador.
 sudo apt install \
     build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev \
     libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
-
 
 # Limpar arquivos temporários.
 if [ -e "Python-$versao_do_python.tar.xz" ]; then
