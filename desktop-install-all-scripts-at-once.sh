@@ -106,8 +106,6 @@ sudo snap install odio
 # Initiate git-lfs for larger packages:
 # git lfs install
 
-
-
 #########################################
 ### Run scripts and install packages ####
 #########################################
@@ -175,3 +173,12 @@ sudo apt autoremove
 
 # Copiar os meus DOTFILES:
 cp -r personal_dotfiles/* $HOME/.config/
+
+
+#Opcional:
+
+# PYCHARM
+# PYCHARM
+#wget -P $HOME/Downloads/ https://download-cf.jetbrains.com/python/pycharm-community-2020.3.3.tar.gz 
+#tar vfx $HOME/Downloads/pycharm-community-2020.3.3.tar.gz --directory $HOME/Downloads/
+

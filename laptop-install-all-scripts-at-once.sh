@@ -175,3 +175,11 @@ sudo apt autoremove
 
 # Copiar os meus DOTFILES:
 cp -r personal_dotfiles/* $HOME/.config/
+
+
+#Opcional:
+
+# PYCHARM
+#wget -P $HOME/Downloads/ https://download-cf.jetbrains.com/python/pycharm-community-2020.3.3.tar.gz 
+#tar vfx $HOME/Downloads/pycharm-community-2020.3.3.tar.gz --directory $HOME/Downloads/
+
