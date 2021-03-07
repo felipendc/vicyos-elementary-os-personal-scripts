@@ -1,3 +1,6 @@
+### REFATORAÇÃO DO CÓDIGO EM BREVE:
+# https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/
+
 # Vareáveis
 versao_do_python='3.9.2'
 verificar_python_path=$(grep -E "(/opt/python-$versao_do_python/)" $HOME/.bashrc)

@@ -13,6 +13,22 @@ current_user_name="vicyos"
 #sudo apt install -y nvidia-driver-390 nvidia-settings
 ###############
 
+#################   PPA   ########################
+# Adicionar suporte para PPAs
+sudo apt install software-properties-common
+
+### PPA PARA INSTALAR AS VERSÕES DO PYTHON:
+sudo add-apt-repository ppa:deadsnakes/nightly
+sudo apt update
+
+# Instalar uma versão especifica do Pyhon
+sudo apt install python3.9 -y
+
+# Setar a versão do Python padrão
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+###################################################
+
+
 
 # Vicyos  Personal packages:
 
