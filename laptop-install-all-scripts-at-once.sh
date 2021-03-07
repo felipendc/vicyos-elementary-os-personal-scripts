@@ -23,6 +23,10 @@ sudo apt install python3.9 -y
 
 # Setar a versão do Python padrão
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+
+# Instalar distuils para python 3.9.x
+sudo apt install python3.9-distutils
+
 ###################################################
 
 
@@ -32,7 +36,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 #cd compilar_python_apartir_da_fonte && sudo chmod +x *.sh && ./compilar_python_apartir_da_fonte.sh && cd ../
 
 sudo apt install python3-pip
-#/opt/python-3.9.2/bin/python3.9 -m pip install --upgrade pip
+python3.9 -m pip install --upgrade pip
 sudo apt install git-lfs -y
 sudo apt install synaptic -y
 sudo apt install samba -y
