@@ -5,7 +5,6 @@
 # unlock sudo rm /var/lib/dpkg/lock
  
 
-
 # Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
 
@@ -174,5 +173,5 @@ sudo apt upgrade -y
 sudo apt install -f
 sudo apt autoremove
 
-# Set python 3 as default:
-#sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+# Copiar os meus DOTFILES:
+cp -r personal_dotfiles/* $HOME/.config/

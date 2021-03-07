@@ -172,3 +172,6 @@ sudo apt autoremove
 
 # Set python 3 as default:
 #sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+
+# Copiar os meus DOTFILES:
+cp -r personal_dotfiles/* $HOME/.config/

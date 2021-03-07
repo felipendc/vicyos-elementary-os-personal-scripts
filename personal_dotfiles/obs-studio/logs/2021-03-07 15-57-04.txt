@@ -1,0 +1,117 @@
+15:57:04.803: CPU Name: Intel(R) Core(TM) i5-4690K CPU @ 3.50GHz
+15:57:04.804: CPU Speed: 2697.434MHz
+15:57:04.804: Physical Cores: 4, Logical Cores: 4
+15:57:04.804: Physical Memory: 15952MB Total, 10360MB Free
+15:57:04.804: Kernel Version: Linux 5.4.0-66-generic
+15:57:04.804: Distribution: "elementary OS" "5.1.7"
+15:57:04.805: Portable mode: false
+15:57:04.829: OBS 0.0.1 (linux)
+15:57:04.829: ---------------------------------
+15:57:04.829: ---------------------------------
+15:57:04.829: audio settings reset:
+15:57:04.829: 	samples per sec: 44100
+15:57:04.829: 	speakers:        2
+15:57:04.839: ---------------------------------
+15:57:04.839: Initializing OpenGL...
+15:57:05.036: OpenGL version: 3.2.0 NVIDIA 460.32.03
+15:57:05.095: ---------------------------------
+15:57:05.095: video settings reset:
+15:57:05.095: 	base resolution:   1920x1080
+15:57:05.095: 	output resolution: 1280x720
+15:57:05.095: 	downscale filter:  Bicubic
+15:57:05.095: 	fps:               30/1
+15:57:05.095: 	format:            NV12
+15:57:05.096: Audio monitoring device:
+15:57:05.096: 	name: Default
+15:57:05.096: 	id: default
+15:57:05.096: ---------------------------------
+15:57:05.112: No blackmagic support
+15:57:05.171: NVENC supported
+15:57:05.189: VLC found, VLC video source enabled
+15:57:05.189: ---------------------------------
+15:57:05.189:   Loaded Modules:
+15:57:05.189:     vlc-video.so
+15:57:05.189:     text-freetype2.so
+15:57:05.189:     rtmp-services.so
+15:57:05.189:     obs-x264.so
+15:57:05.189:     obs-transitions.so
+15:57:05.189:     obs-outputs.so
+15:57:05.189:     obs-filters.so
+15:57:05.189:     obs-ffmpeg.so
+15:57:05.189:     linux-v4l2.so
+15:57:05.189:     linux-pulseaudio.so
+15:57:05.189:     linux-jack.so
+15:57:05.189:     linux-decklink.so
+15:57:05.189:     linux-capture.so
+15:57:05.189:     linux-alsa.so
+15:57:05.189:     image-source.so
+15:57:05.189:     frontend-tools.so
+15:57:05.189: ---------------------------------
+15:57:05.189: ==== Startup complete ===============================================
+15:57:05.190: Service '' not found
+15:57:05.218: No scene file found, creating default scene
+15:57:05.219: All scene data cleared
+15:57:05.219: ------------------------------------------------
+15:57:05.230: pulse-input: Server name: 'pulseaudio 11.1'
+15:57:05.230: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+15:57:05.231: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+15:57:05.231: pulse-input: Server name: 'pulseaudio 11.1'
+15:57:05.231: pulse-input: Audio format: s16le, 44100 Hz, 1 channels
+15:57:05.231: pulse-input: Started recording from 'alsa_input.usb-Sony_Computer_Entertainment_Wired_USB_Headset-00.analog-mono'
+15:57:05.231: Switched to scene 'Scene'
+15:57:05.231: Failed to glob scene collections
+15:57:05.777: adding 23 milliseconds of audio buffering, total audio buffering is now 23 milliseconds
+15:57:05.899: [rtmp-services plugin] Update file 'services.json' (version 170) rejected
+15:57:05.900: [rtmp-services plugin] Successfully updated package (version 170)
+15:57:10.689: adding 23 milliseconds of audio buffering, total audio buffering is now 46 milliseconds
+15:57:23.810: ---------------------------------
+15:57:23.810: video settings reset:
+15:57:23.810: 	base resolution:   1920x1080
+15:57:23.810: 	output resolution: 1920x1080
+15:57:23.810: 	downscale filter:  Bicubic
+15:57:23.810: 	fps:               60/1
+15:57:23.810: 	format:            NV12
+15:57:23.810: Settings changed (video)
+15:57:23.810: ------------------------------------------------
+15:59:25.245: Settings changed (outputs, audio)
+15:59:25.246: ------------------------------------------------
+15:59:39.849: User added source 'Window Capture (Xcomposite)' (xcomposite_input) to scene 'Scene'
+15:59:39.903: xcompcap: [window-capture: 'Window Capture (Xcomposite)'] update settings:
+15:59:39.903: 	title: wingpanel
+15:59:39.903: 	class: wingpanel
+15:59:39.903: glCopyImageSubData failed, glGetError returned 0x502
+15:59:39.903: device_copy_texture (GL) failed
+15:59:39.922: glCopyImageSubData failed, glGetError returned 0x502
+15:59:39.923: device_copy_texture (GL) failed
+15:59:39.936: glCopyImageSubData failed, glGetError returned 0x502
+15:59:39.936: device_copy_texture (GL) failed
+15:59:39.953: xcompcap: glXCreatePixmap failed: BadMatch (invalid parameter attributes)
+15:59:49.816: xcompcap: glXCreatePixmap failed: BadMatch (invalid parameter attributes)
+15:59:51.424: User Removed source 'Window Capture (Xcomposite)' (xcomposite_input) from scene 'Scene'
+16:00:01.077: xshm-input: Geometry 1920x1080 @ 0,0
+16:00:01.083: User added source 'Screen Capture (XSHM)' (xshm_input) to scene 'Scene'
+16:00:06.385: ---------------------------------
+16:00:06.385: [x264 encoder: 'recording_h264'] preset: veryfast
+16:00:06.385: [x264 encoder: 'recording_h264'] settings:
+16:00:06.385: 	rate_control: CBR
+16:00:06.385: 	bitrate:      10500
+16:00:06.385: 	buffer size:  10500
+16:00:06.385: 	crf:          0
+16:00:06.385: 	fps_num:      60
+16:00:06.385: 	fps_den:      1
+16:00:06.385: 	width:        1920
+16:00:06.385: 	height:       1080
+16:00:06.385: 	keyint:       250
+16:00:06.385: 
+16:00:06.391: ---------------------------------
+16:00:06.394: [FFmpeg aac encoder: 'Track1'] bitrate: 160, channels: 2, channel_layout: 3
+16:00:06.394: 
+16:00:06.404: ==== Recording Start ===============================================
+16:00:06.404: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/felipe/2021-03-07 16-00-06.mp4'...
+16:01:08.837: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/felipe/2021-03-07 16-00-06.mp4' stopped
+16:01:08.837: Output 'adv_file_output': stopping
+16:01:08.837: Output 'adv_file_output': Total frames output: 3725
+16:01:08.837: Output 'adv_file_output': Total drawn frames: 3744 (3746 attempted)
+16:01:08.837: Output 'adv_file_output': Number of lagged frames due to rendering lag/stalls: 2 (0,1%)
+16:01:08.837: ==== Recording Stop ================================================
+16:01:37.435: adding 23 milliseconds of audio buffering, total audio buffering is now 69 milliseconds
