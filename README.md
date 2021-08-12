@@ -1,4 +1,4 @@
-![](https://i.imgur.com/D3S5XMc.png)
+<!-- ![](https://i.imgur.com/D3S5XMc.png)
 
 <br />
 <br />
@@ -47,4 +47,4 @@ sudo apt install software-properties-common</pre>
 
 ![](https://i.imgur.com/bAT6U1U.png)
 ![](https://i.imgur.com/uybSU72.png)
-![](https://i.imgur.com/YjexDba.png)
+![](https://i.imgur.com/YjexDba.png) -->
