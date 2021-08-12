@@ -16,8 +16,19 @@ sudo apt install python3.9 -y
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 
 
-# Instalar distuils para python 3.9.x
-sudo apt install python3.9-distutils
+# Installing distuils for Python:
+sudo apt install python
+sudo apt install python2
+sudo apt install python3.9-full
+sudo apt install python3.11
+sudo apt install python3.11-distutils
+sudo apt install python3.10
+sudo apt install python3.10-distutils
+
+## Other Python installation options:
+
+
+
 
 
 # Refreshing the repo and upgrading the system:
