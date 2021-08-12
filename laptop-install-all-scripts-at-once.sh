@@ -1,23 +1,23 @@
 #!/bin/bash
 # github.com/felipendc
 
-# Variable to Setup the current user name for Samba  
+# Variable to Setup the current user name for Samba:
 current_user_name="vicyos"
 
 
-### PPA PARA INSTALAR AS VERSÕES DO PYTHON: ###
+### ADDING A PPA TO INSTALL PYTHON: ###
 sudo add-apt-repository ppa:deadsnakes/nightly
 sudo apt update
 
-# Instalar uma versão especifica do Pyhon
+# Installing do Pyhon3:
 sudo apt install python3.9 -y
 
-# Setar a versão do Python padrão
+# Setting up the default Python version:
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+
 
 # Instalar distuils para python 3.9.x
 sudo apt install python3.9-distutils
-
 
 
 # Refreshing the repo and upgrading the system:
@@ -26,6 +26,7 @@ sudo apt-get upgrade
 
 
 #### Vicyos Personal packages: ####
+
 #songrec
 sudo apt-add-repository ppa:marin-m/songrec -y -u
 sudo apt-get update
@@ -55,20 +56,20 @@ sudo apt install fastboot -y
 sudo apt install gedit -y
 #sudo apt install git-lfs -y
 
-# Install any pkgs dependencies
+# Installing pkgs dependencies if needed:
 sudo apt install -f
 
-# Auto remove unnecessary packages:
+# Auto removing unnecessary packages:
 sudo apt autoremove
 
-# Install Firewall and allow Samba: 
+# Installing Firewall and allow Samba: 
 sudo ufw enable
 #sudo ufw allow Samba
 
-# Setup Samba
+# Setting up Samba
 #sudo smbpasswd -a $current_user_name
 
-# Initiate git-lfs for larger packages:
+# Initiating git-lfs for larger packages:
 # git lfs install
 
 
@@ -185,10 +186,7 @@ cd random && tar -xf xdm*.tar.xz && sudo ./install.sh && rm -r install.sh readme
 # Setting Github email and nickname:
 sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 
-# Set python 3 as default:
-#sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
-
-# Copiar os meus DOTFILES:
+# Copping my DOTFILES to .config folder:
 cp -r personal_dotfiles/* $HOME/.config/
 
 # Reminder:
