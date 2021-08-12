@@ -1,23 +1,23 @@
 #!/bin/bash
 # github.com/felipendc
 
-# Variable to Setup the current user name for Samba  
+# Variable to Setup the current user name for Samba:
 current_user_name="vicyos"
 
 
-### PPA PARA INSTALAR AS VERSÕES DO PYTHON: ###
+### ADDING A PPA TO INSTALL PYTHON: ###
 sudo add-apt-repository ppa:deadsnakes/nightly
 sudo apt update
 
-# Instalar uma versão especifica do Pyhon
+# Installing do Pyhon3:
 sudo apt install python3.9 -y
 
-# Setar a versão do Python padrão
+# Setting up the default Python version:
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+
 
 # Instalar distuils para python 3.9.x
 sudo apt install python3.9-distutils
-
 
 
 # Refreshing the repo and upgrading the system:
@@ -26,6 +26,7 @@ sudo apt-get upgrade
 
 
 #### Vicyos Personal packages: ####
+
 #songrec
 sudo apt-add-repository ppa:marin-m/songrec -y -u
 sudo apt-get update
@@ -55,25 +56,25 @@ sudo apt install fastboot -y
 sudo apt install gedit -y
 #sudo apt install git-lfs -y
 
-# Install any pkgs dependencies
+# Installing pkgs dependencies if needed:
 sudo apt install -f
 
-# Auto remove unnecessary packages:
+# Auto removing unnecessary packages:
 sudo apt autoremove
 
-# Install Firewall and allow Samba: 
+# Installing Firewall and allow Samba: 
 sudo ufw enable
 #sudo ufw allow Samba
 
-# Setup Samba
+# Setting up Samba
 #sudo smbpasswd -a $current_user_name
 
-# Initiate git-lfs for larger packages:
+# Initiating git-lfs for larger packages:
 # git lfs install
 
 
 ############# FLATHUB PACKAGES ################
-cd /elementaryos_config/
+cd elementaryos_config/
 cp -r config* ~/.local/share/flatpak/repo/
 
 wget https://flathub.org/repo/flathub.gpg
@@ -105,7 +106,7 @@ sudo apt autoremove
 
 
 # Copying all of the files and dotfiles to the HOME folder:
-cd root_files
+cd root_files/
 cp -r * ~/
 cp -r .[a-zA-Z0-9]* ~/
 cd ../
@@ -162,7 +163,9 @@ code --install-extension will-stone.plastic
 #cd nitroshare && sudo apt install ./nitroshare_0.3.3-1.1_amd64.deb -y --allow-downgrades && cd ../
 
 # Move my personal .bashrc file to my HOME folder:
-cd ubuntu-personal-bashrc && sudo cp -r .bashrc* ~/ && cd ../
+cd elementary-os-personal-bashrc
+sudo cp -r .bashrc* ~/
+cd ../
 
 # Installing 4kvideodownloader:
 #cd random && sudo apt install ./4kvideodownloader*.deb -y --allow-downgrades && cd ../
@@ -171,13 +174,15 @@ cd ubuntu-personal-bashrc && sudo cp -r .bashrc* ~/ && cd ../
 #cd random && sudo apt install ./google-chrome-stable_current_amd64.deb -y --allow-downgrades && cd ../
 
 # Installing Visual Studio Code:
-cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
+cd random/
+sudo apt install ./code*.deb -y --allow-downgrades
+cd ../
 
 # Installing Photoscape with wine:
 #wine random/photoscape*.exe 
 
-# Installing XDownloader Manager: 
-cd random && tar -xf xdm*.tar.xz && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
+# # Installing XDownloader Manager: 
+# cd random/ && tar -xf xdm*.tar.xz && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
 
 # Installing SoundCloud Downloader:
 #cd scdl && sudo pip3 install scdl && cd ../
@@ -185,11 +190,11 @@ cd random && tar -xf xdm*.tar.xz && sudo ./install.sh && rm -r install.sh readme
 # Setting Github email and nickname:
 sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 
-# Set python 3 as default:
-#sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+# Copping my DOTFILES to .config folder:
+cp -r personal_dotfiles/* ~/.config/
 
-# Copiar os meus DOTFILES:
-cp -r personal_dotfiles/* $HOME/.config/
+# Removing flathub gpg keys:
+rm -Rfv *flathub.gpg*
 
 # Reminder:
-gedit How_to_setup_rclone.txt
+code How_to_setup_rclone.txt
