@@ -25,11 +25,6 @@ sudo apt install python3.11-distutils
 sudo apt install python3.10
 sudo apt install python3.10-distutils
 
-## Other Python installation options:
-
-
-
-
 
 # Refreshing the repo and upgrading the system:
 sudo apt-get update
