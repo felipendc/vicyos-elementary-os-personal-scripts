@@ -1,5 +1,6 @@
 {
     "AuxAudioDevice1": {
+        "balance": 0.5,
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
@@ -13,8 +14,9 @@
         "id": "pulse_input_capture",
         "mixers": 255,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Mic/Aux",
+        "prev_ver": 436273154,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -24,9 +26,11 @@
             "device_id": "default"
         },
         "sync": 0,
-        "volume": 1.0
+        "versioned_id": "pulse_input_capture",
+        "volume": 0.039781324565410614
     },
     "DesktopAudioDevice1": {
+        "balance": 0.5,
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
@@ -42,6 +46,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Desktop Audio",
+        "prev_ver": 436273154,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -51,11 +56,13 @@
             "device_id": "default"
         },
         "sync": 0,
-        "volume": 1.0
+        "versioned_id": "pulse_output_capture",
+        "volume": 0.045207004994153976
     },
     "current_program_scene": "Scene",
     "current_scene": "Scene",
     "current_transition": "Fade",
+    "groups": [],
     "modules": {
         "auto-scene-switcher": {
             "active": false,
@@ -64,161 +71,48 @@
             "switch_if_not_matching": false,
             "switches": []
         },
+        "decklink_captions": {
+            "source": ""
+        },
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
+            "pauseRecordTimer": true,
             "recordTimerHours": 0,
             "recordTimerMinutes": 0,
             "recordTimerSeconds": 30,
             "streamTimerHours": 0,
             "streamTimerMinutes": 0,
             "streamTimerSeconds": 30
-        }
+        },
+        "scripts-tool": []
     },
     "name": "Untitled",
     "preview_locked": false,
     "quick_transitions": [
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 1,
             "name": "Cut"
         },
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 2,
             "name": "Fade"
+        },
+        {
+            "duration": 300,
+            "fade_to_black": true,
+            "hotkeys": [],
+            "id": 3,
+            "name": "Fade"
         }
     ],
-    "saved_multiview_projectors": [
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        },
-        {
-            "saved_multiview_projectors": 0
-        }
-    ],
-    "saved_preview_projectors": [
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        }
-    ],
-    "saved_projectors": [
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        }
-    ],
-    "saved_studio_preview_projectors": [
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        },
-        {
-            "saved_studio_preview_projectors": 0
-        }
-    ],
+    "saved_projectors": [],
     "scaling_enabled": false,
     "scaling_level": 0,
     "scaling_off_x": 0.0,
@@ -230,16 +124,58 @@
     ],
     "sources": [
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "xshm_input",
-            "mixers": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "pulse_input_capture",
+            "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Screen Capture (XSHM)",
+            "name": "teste",
+            "prev_ver": 436273154,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_id": "alsa_input.pci-0000_00_1b.0.analog-stereo"
+            },
+            "sync": 0,
+            "versioned_id": "pulse_input_capture",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "VLCSource.PlayPause": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "vlc_source",
+            "mixers": 255,
+            "monitoring_type": 2,
+            "muted": false,
+            "name": "VLC Video Source",
+            "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -247,30 +183,36 @@
             "push-to-talk-delay": 0,
             "settings": {},
             "sync": 0,
+            "versioned_id": "vlc_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Screen Capture (XSHM)": [],
-                "libobs.show_scene_item.Screen Capture (XSHM)": []
+                "libobs.hide_scene_item.VLC Video Source": [],
+                "libobs.hide_scene_item.teste": [],
+                "libobs.show_scene_item.VLC Video Source": [],
+                "libobs.show_scene_item.teste": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Scene",
+            "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 2,
+                "custom_size": false,
+                "id_counter": 5,
                 "items": [
                     {
                         "align": 5,
@@ -284,9 +226,39 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "id": 2,
+                        "group_item_backup": false,
+                        "id": 4,
                         "locked": false,
-                        "name": "Screen Capture (XSHM)",
+                        "name": "VLC Video Source",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": false,
+                        "name": "teste",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -303,6 +275,7 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         }
     ],

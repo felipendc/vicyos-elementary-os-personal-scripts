@@ -208,7 +208,7 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 ##########  Brazillian Portuguese alias  ########## 
 
 alias kernel="cat /proc/version"
-alias sudo-reiniciar-o-computador="sudo reboot"
+alias sudo-o-reiniciar-o-computador="sudo reboot"
 alias atualizar-o-sistema='sudo pacman -Syu'
 alias reiniciar-o-computador="reboot"
 alias sudo-desligar-o-computador="sudo shutdown now"
@@ -221,23 +221,39 @@ alias desligar-o-computador="shutdown now"
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias revo='sudo apt autoremove'
 alias update='sudo apt-get update && sudo apt-get upgrade'
-alias revo='sudo apt autoremove'
+alias upgrade='sudo apt-get update && sudo apt-get dist-upgrade'
 alias reboot='sudo systemctl reboot -i'
+
 
 alias install='sudo apt install'
 alias remove='sudo apt remove'
 alias unlock='sudo rm /var/lib/dpkg/lock-frontend && sudo rm /var/lib/dpkg/lock'
 alias fix='sudo dpkg --configure -a'
-alias cloud='scdl -l'
+alias refresh='source ~/.bashrc'
 
+export ANDROID_AVD_HOME="$PATH:/home/vicyos/.android/avd" 
+export ANDROID_SDK_ROOT="$PATH:/home/vicyos/Android/Sdk" 
 export PATH="$PATH:/home/vicyos/flutter/bin"
+export PATH="$PATH:/home/vicyos/node-v16.5.0-linux-x64/bin"
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+export PATH="$PATH:/home/vicyos/Android/Sdk/platform-tools"
+export PATH="$PATH:/home/vicyos/Android/Sdk/emulator"
+
+# tqdm script
+export PATH="$PATH:/home/vicyos/.local/bin"
+
+
 
 ############ CCACHE to compile android custom roms! ############
 
-#export USE_CCACHE=1
-#export CCACHE_DIR="${HOME}/.ccache"
-#export CCACHE_EXEC="$(which ccache)"
-#ccache -M 150G
+# export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
+# export USE_CCACHE=1
+# export CCACHE_DIR="${HOME}/.ccache"
+# export CCACHE_EXEC="$(which ccache)"
+# ccache -M 150G
 
+# Install git-lfs
+#git lfs install
+#repo forall -c git lfs pull
 
 
