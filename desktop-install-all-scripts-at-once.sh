@@ -58,6 +58,7 @@ sudo apt install python-pip -y
 sudo apt install winff -y
 sudo apt install adb -y
 sudo apt install fastboot -y
+sudo apt install grub-customizer -y
 sudo apt install gedit -y
 #sudo apt install git-lfs -y
 
